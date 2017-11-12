@@ -9,9 +9,7 @@
 			"type": "integer",
 			"format": "int64"
 		},
-		"category": {
-			"$ref": "#/definitions/Category"
-		},
+		"category": "Category",
 		"name": {
 			"type": "string",
 			"example": "doggie"
@@ -32,9 +30,7 @@
 				"name": "tag",
 				"wrapped": true
 			},
-			"items": {
-				"$ref": "#/definitions/Tag"
-			}
+			"items": "Tag"
 		},
 		"status": {
 			"type": "string",
