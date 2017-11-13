@@ -1,0 +1,27 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Catalog",
+		"version": "v3",
+		"description": "Product Catalog and Orders",
+		"contact": {
+			"name": "PostNL"
+		}
+	},
+	"host": "api-acc.postnl.nl",
+	"basePath": "/",
+	"produces": ["application/json"],
+	"schemes": ["https"],
+	"paths": {
+		"/v3/catalog": {
+			"get": {
+				"operationId": "GetCatalog"
+			}
+		},
+		"/consumer/shipment/v1/prepare": {
+			"post": {
+				"operationId": "CreateOrder"
+			}
+		}
+	}
+}

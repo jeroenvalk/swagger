@@ -1,0 +1,8 @@
+{
+	"parameters": ["XContentCaller"],
+	"responses": {
+		"200": {
+			"description": "OK"
+		}
+	}
+}
