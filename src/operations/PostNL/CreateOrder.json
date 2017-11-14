@@ -1,5 +1,10 @@
 {
-	"parameters": ["XContentCaller"],
+	"parameters": ["XContentCaller", {
+		"name": "body",
+		"in": "body",
+		"required": true,
+		"schema": "MarktplaatsOrder"
+	}],
 	"responses": {
 		"200": {
 			"description": "OK"

@@ -1,0 +1,36 @@
+{
+	"type": "object",
+	"example": {
+		"sender": {
+			"firstName": "Name",
+			"email": "test@email.nl",
+			"houseNumber": 23,
+			"houseNumberSuffix": null,
+			"postalCode": "1111AA",
+			"lastName": "LastName"
+		},
+		"shipment": {
+			"product": {
+				"catalogName": "Parcels",
+				"country": "AT",
+				"productCode": "6321",
+				"averageWeight": 7500
+			},
+			"recipient": {
+				"firstName": "Name",
+				"lastName": "LastName",
+				"email": "test@email.nl",
+				"postalCode": "1111AA",
+				"houseNumber": "20",
+				"houseNumberSuffix": "ABC",
+				"street": "Straatnaam",
+				"town": "PlaatsNaam",
+				"building": "Princes-Maria-Flat",
+				"floor": "2th floor",
+				"doorcode": "32H",
+				"region": "Utrecht"
+			},
+			"description": "Uitleg van de bestelling"
+		}
+	}
+}
