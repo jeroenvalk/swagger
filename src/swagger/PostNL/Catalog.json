@@ -12,6 +12,16 @@
 	"basePath": "/",
 	"produces": ["application/json"],
 	"schemes": ["https"],
+	"securityDefinitions": {
+		"apikey": {
+			"type": "apiKey",
+			"in": "header",
+			"name": "apikey"
+		}
+	},
+	"security": [{
+		"apikey": []
+	}],
 	"paths": {
 		"/v3/catalog": {
 			"get": {
