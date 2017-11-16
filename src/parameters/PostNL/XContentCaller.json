@@ -3,5 +3,6 @@
 	"in": "header",
 	"required": false,
 	"type": "string",
-	"default": "marktplaats"
+	"enum": ["Catawiki", "marktplaats"],
+	"default": "Catawiki"
 }
