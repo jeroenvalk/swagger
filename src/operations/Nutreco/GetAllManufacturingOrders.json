@@ -1,0 +1,8 @@
+{
+	"operationId": "GetAllManufacturingOrders",
+	"responses": {
+		"200": {
+			"description": "OK"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"operationId": "ReadManufacturingOrder",
+	"parameters": [
+		{
+			"in": "path",
+			"name": "uuid",
+			"type": "string"
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "OK"
+		}
+	}
+}

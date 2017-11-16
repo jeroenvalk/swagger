@@ -1,0 +1,48 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "ManufacturingOrder",
+		"description": "ManufacturingOrders",
+		"version": "v1"
+	},
+	"host": "apibaas-trial.apigee.net",
+	"basePath": "/nutreco/nut",
+	"produces": [
+		"application/json"
+	],
+	"schemes": [
+		"https"
+	],
+	"securityDefinitions": {
+		"basicAuth": {
+			"type": "basic"
+		}
+	},
+	"security": [{
+		"basicAuth": []
+	}],
+	"paths": {
+		"/manufacturingorders": {
+			"get": {
+				"operationId": "GetAllManufacturingOrders"
+			},
+			"post": {
+				"operationId": "CreateManufacturingOrder"
+			},
+			"delete": {
+				"operationId": "DeleteAllManufacturingOrders"
+			}
+		},
+		"/manufacturingorders/{uuid}": {
+			"get": {
+				"operationId": "ReadManufacturingOrder"
+			},
+			"put": {
+				"operationId": "UpdateManufacturingOrder"
+			},
+			"delete": {
+				"operationId": "DeleteManufacturingOrder"
+			}
+		}
+	}
+}

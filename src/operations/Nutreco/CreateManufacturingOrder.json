@@ -1,0 +1,16 @@
+{
+	"operationId": "CreateManufacturingOrder",
+	"parameters": [
+		{
+			"name": "body",
+			"in": "body",
+			"required": true,
+			"schema": "ManufacturingOrder"
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "OK"
+		}
+	}
+}

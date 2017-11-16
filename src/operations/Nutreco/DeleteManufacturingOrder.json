@@ -1,0 +1,15 @@
+{
+	"operationId": "DeleteManufacturingOrder",
+	"parameters": [
+		{
+			"in": "path",
+			"name": "uuid",
+			"type": "string"
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "OK"
+		}
+	}
+}

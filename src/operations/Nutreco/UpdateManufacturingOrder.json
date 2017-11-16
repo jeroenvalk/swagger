@@ -1,0 +1,21 @@
+{
+	"operationId": "UpdateManufacturingOrder",
+	"parameters": [
+		{
+			"in": "path",
+			"name": "uuid",
+			"type": "string"
+		},
+		{
+			"name": "body",
+			"in": "body",
+			"required": true,
+			"schema": "ManufacturingOrder"
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "OK"
+		}
+	}
+}

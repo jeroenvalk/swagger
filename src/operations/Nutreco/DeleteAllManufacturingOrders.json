@@ -1,0 +1,8 @@
+{
+	"operationId": "DeleteAllManufacturingOrders",
+	"responses": {
+		"200": {
+			"description": "OK"
+		}
+	}
+}
