@@ -1,0 +1,28 @@
+{
+	"summary" : "get universally unique identifier (UUID)",
+	"description" : "Get the universally unique identifier (uuid5) for an identifier issued by an identity provider. The entity ComPosiX is reserved to identify other identity providers. For example, /identity/Google/at/ComPosiX get the UUID of the identity provider Google at ComPosiX. The UUIDs are computed according to variant version 5 of RFC 4122. For example, ComPosiX has UUID = uuid5(\"ComPosiX\", \"00000000-0000-0000-0000-000000000000\") = \"06176915-9b8b-55ee-9cdc-ea57e691af74\" and Google has UUID = uuid5(\"Google\", \"06176915-9b8b-55ee-9cdc-ea57e691af74\") = \"ec4b005f-e13f-5ad8-a532-f2c23a865be8\".",
+	"operationId" : "computeUUIDv5",
+	"parameters" : [ {
+		"name" : "uid",
+		"in" : "path",
+		"description" : "name for which to get the uid",
+		"required" : true,
+		"type" : "string",
+		"default" : "ComPosiX"
+	}, {
+		"name" : "entity",
+		"in" : "path",
+		"description" : "name of the identity provider",
+		"required" : true,
+		"type" : "string",
+		"default" : "ComPosiX"
+	} ],
+	"responses" : {
+		"200" : {
+			"description" : "returns chain of equivalent identifiers",
+			"schema" : {
+				"$ref" : "#/definitions/inline_response_200"
+			}
+		}
+	}
+}

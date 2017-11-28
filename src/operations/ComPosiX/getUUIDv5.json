@@ -1,0 +1,24 @@
+{
+	"summary" : "retrieve information about a UUID in the blockchain",
+	"description" : "Every UUID belongs to exactly one identity provider and has exactly one alias; this information is returned. An alias that differs from the original UUID indicates that two identifiers exist that point to the same identity. The alias allows to uniquely identify a user that has multiple identitiers possibly at multiple identity providers.",
+	"operationId" : "getUUIDv5",
+	"parameters" : [ {
+		"name" : "uuid",
+		"in" : "path",
+		"description" : "uuid to lookup",
+		"required" : true,
+		"type" : "string",
+		"default" : "06176915-9b8b-55ee-9cdc-ea57e691af74"
+	} ],
+	"responses" : {
+		"200" : {
+			"description" : "returns chain of equivalent identifiers",
+			"schema" : {
+				"$ref" : "#/definitions/inline_response_200_1"
+			}
+		},
+		"404" : {
+			"description" : "UUID not found in blockchain"
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"summary" : "stores information about a UUID in the blockchain",
+	"description" : "Writes the identity provider and optionally also an alias into the blockchain for the requested UUID. Processing happens in a smart way to avoid cycles and maintain chains of aliases as trees that lead to a single main UUID for each user. Each tree represents an equivalence class of UUIDs.",
+	"operationId" : "putUUIDv5",
+	"parameters" : [ {
+		"name" : "uuid",
+		"in" : "path",
+		"description" : "uuid to be stored",
+		"required" : true,
+		"type" : "string",
+		"default" : "06176915-9b8b-55ee-9cdc-ea57e691af74"
+	} ],
+	"responses" : {
+		"200" : {
+			"description" : "information already stored as requested"
+		},
+		"201" : {
+			"description" : "information has been updated as requested"
+		},
+		"400" : {
+			"description" : "invalid UUID or syntax error"
+		},
+		"409" : {
+			"description" : "conflict with information in the blockchain; that is, an identity provider or alias has already been provided and differs from what is requested"
+		}
+	}
+}
