@@ -1,0 +1,13 @@
+{
+	"operationId": "DutchSprouts",
+	"summary": "Dutch Sprouts",
+	"produces": ["application/json"],
+	"parameters": [
+		{
+			"name": "body",
+			"in": "body",
+			"required": true,
+			"schema": "DutchSprouts"
+		}
+	]
+}
