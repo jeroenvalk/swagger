@@ -4,6 +4,19 @@
 	"produces": ["application/json"],
 	"parameters": [
 		{
+			"name": "appToken",
+			"in": "header",
+			"required": true,
+			"type": "string",
+			"default": "{F2361FE2-9FAF-440B-9234-DFEC7E4156DC}"
+		},
+		{
+			"name": "userToken",
+			"in": "header",
+			"required": true,
+			"type": "string"
+		},
+		{
 			"name": "body",
 			"in": "body",
 			"required": true,
