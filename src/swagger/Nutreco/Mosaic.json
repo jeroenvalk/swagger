@@ -5,8 +5,8 @@
 		"description": "Mosaic",
 		"version": "v1"
 	},
-	"host": "apibaas-trial.apigee.net",
-	"basePath": "/nutreco/nut",
+	"host": "api-dev.nutreco.com",
+	"basePath": "/mosaic",
 	"produces": [
 		"application/json"
 	],
@@ -26,7 +26,7 @@
 		}
 	],
 	"paths": {
-		"/mosaic": {
+		"/": {
 			"post": {
 				"operationId": "DutchSprouts"
 			}
