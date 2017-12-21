@@ -9,5 +9,10 @@
 			"required": true,
 			"schema": "DutchSprouts"
 		}
-	]
+	],
+	"responses": {
+		"200": {
+			"description": "OK"
+		}
+	}
 }
